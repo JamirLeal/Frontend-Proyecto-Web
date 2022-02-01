@@ -8,8 +8,8 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<div>Pagina de inicio</div>} />
-      <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route
         path="/Calendario"
         element={<div>Es es la pagina de Calendario</div>}
