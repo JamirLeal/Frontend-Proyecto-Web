@@ -8,7 +8,7 @@ import {
 import Perfil from './components/perfil/Perfil';
 import Login from "./components/login/login";
 import Register from "./components/register/register";
-import MyCalendar from "./components/Calendar/MyCalendar";
+import CalendarPage from "./components/CalendarPage/CalendarPage";
 
 
 render(
@@ -19,7 +19,7 @@ render(
       <Route path="/Perfil" element={<Perfil/>} />
       <Route
         path="/Calendario"
-        element={<MyCalendar />}
+        element={<CalendarPage />}
       />
   
     </Routes>
