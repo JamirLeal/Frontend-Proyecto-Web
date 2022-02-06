@@ -5,19 +5,20 @@ import {
   Route
 } from "react-router-dom";
 
-import Perfil from './pages/Perfil';
+import Perfil from './components/perfil/Perfil';
+import Login from "./components/login/login";
+import Register from "./components/register/register";
+
 
 
 render(
   <BrowserRouter>
     <Routes>
-           <Route path="/"  element = {<div>Login</div>}/>
+      <Route path="/" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/Calendario" element={<div>Es es la pagina de Calendario</div>}/>
+      <Route path="/Perfil" element={<Perfil/>} />
 
-           <Route path="/Calendario" element = {<div>Es es la pagina de Calendario</div>}/>
-
-           <Route path="/Perfil"  element = {<Perfil/>}/>
-
-           <Route path="/Register"  element = {<div>Esta es la pagina de Registro</div>}/>
     </Routes>
 
   </BrowserRouter>,
