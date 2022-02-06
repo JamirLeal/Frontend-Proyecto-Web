@@ -8,7 +8,7 @@ import {
 import Perfil from './components/perfil/Perfil';
 import Login from "./components/login/login";
 import Register from "./components/register/register";
-import MyCalendar from "./components/calendar/MyCalendar";
+import MyCalendar from "./components/Calendar/MyCalendar";
 
 
 render(
