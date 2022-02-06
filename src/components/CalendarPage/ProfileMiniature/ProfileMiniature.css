@@ -1,0 +1,9 @@
+.profile-miniature:hover {
+    cursor: pointer;
+}
+
+.profile-miniature-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 30px;
+}

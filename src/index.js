@@ -18,7 +18,7 @@ render(
       <Route path="/register" element={<Register />} />
       <Route path="/Perfil" element={<Perfil/>} />
       <Route
-        path="/Calendario"
+        path="/MyCalendar"
         element={<CalendarPage />}
       />
   
