@@ -23,7 +23,7 @@ const Perfil = () => {
                    <button  className="btn btn-secondary">Edit your data</button>
                    <button className="btn btn-info">Your Profile</button>
                    <button className="btn btn-success" onClick={() => {
-                       navigate("/calendario");
+                       navigate("/MyCalendar");
                    }
                    }
                    >

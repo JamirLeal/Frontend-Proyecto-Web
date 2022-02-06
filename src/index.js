@@ -8,7 +8,7 @@ import {
 import Perfil from './components/perfil/Perfil';
 import Login from "./components/login/login";
 import Register from "./components/register/register";
-
+import MyCalendar from "./components/calendar/MyCalendar";
 
 
 render(
@@ -16,9 +16,12 @@ render(
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/Calendario" element={<div>Es es la pagina de Calendario</div>}/>
       <Route path="/Perfil" element={<Perfil/>} />
-
+      <Route
+        path="/Calendario"
+        element={<MyCalendar />}
+      />
+  
     </Routes>
 
   </BrowserRouter>,
