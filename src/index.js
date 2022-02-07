@@ -10,6 +10,8 @@ import Login from "./components/login/login";
 import Register from "./components/register/register";
 import CalendarPage from "./components/CalendarPage/CalendarPage";
 
+import "tachyons";
+
 
 render(
   <BrowserRouter>
