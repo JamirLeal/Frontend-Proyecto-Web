@@ -1,23 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React, { Component, useState } from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import CalendarPage from './components/CalendarPage/CalendarPage';
+import Login from './components/login/login';
+import Register from './components/register/register';
+import Perfil from './components/perfil/Perfil';
+
+const App = () => {
+
+  document.title = "Sport Analysis Tool";
+    
+  window.onbeforeunload = () => { window.scrollTo(0, 0); }
+
+  const token = localStorage.getItem('token');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and sasfave to reload.
-          </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+        <BrowserRouter>
+          <Routes>
+              <Route
+                path='/'
+                element={ token === null? <Login />  : <CalendarPage />}
+              />
+          <Route
+                path='/login'
+                element={ <Login /> }
+              />
+              <Route
+                path='/register'
+                element={ <Register /> }
+              />
+              <Route
+                path='/MyCalendar'
+                element={ <CalendarPage /> }
+              />
+              <Route
+                path='/Perfil'
+                element={ <Perfil /> }
+              />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }

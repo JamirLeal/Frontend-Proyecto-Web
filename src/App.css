@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+.app-container {
+  background: url('https://picsum.photos/2000/2000');
+  background-size: cover;
+  height: 100%;
+}
+
+body > #root > div {
+  height: 100vh;
+}*/
