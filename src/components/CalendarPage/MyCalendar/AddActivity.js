@@ -30,6 +30,7 @@ const AddActivity = ({token}) => {
     }
 
     const handleSubmit = async () => {
+        
         const dataToSend = {
             email: token,
             title: activityInfo.title,
